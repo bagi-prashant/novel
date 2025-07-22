@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WING's</title>
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <style>
+    *{
+      margin: 0px;
+    }
+    .navbar{
+      background: linear-gradient(to right,rgb(114, 1, 252),rgb(176, 3, 250));
+      width: 100%;
+      /* padding: 10px; */
+      height: 80px;
+      display: flex;
+      align-items: center;
+    }
+    button{
+    display: flex;
+    margin-left: 15px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer ;
+    background: linear-gradient(to right, rgb(212 133 228 / 93%), rgb(84 163 169 / 81%));
+    }
+    button a{
+      text-decoration: none;
+      font-family: fantasy;
+      color: rgba(25, 2, 29, 0.718); 
+      font-size: 25px;
+    }
+    .item_box{
+      display: flex;
+      width: 100%;
+      height: 770px;
+      background: linear-gradient(to left, rgb(188 27 231 / 75%), rgb(1 52 48 / 90%));
+    }
+    .image{
+      display: flex;
+      height: 750px;
+      padding: 10px;
+    }
+    .info{
+    height: 729px;
+    width: 64%;
+    padding: 10px;
+    /* border: 2px solid black; */
+    background: linear-gradient(to right, rgb(205 205 205), rgb(69 98 191 / 74%));
+    margin-left: -3px;
+    margin-top: 10px
+    }
+    .info article{
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 35px;
+    margin-left: 60px;
+    }
+    button{
+      display: inline;
+      font-family: fantasy;
+      font-size: 1rem;
+    }
+    button:hover{
+      background: linear-gradient(to right,rgb(84 163 169 / 81%), rgb(212 133 228 / 93%));
+      color: rgba(44, 12, 12, 0.626);
+    }
+    p{
+      font-family: arial;
+      font-size: 1.5rem;
+      padding-left: 60px;
+      margin-top: 65px;
+      padding-right: 135px;
+    }
+    .margin{
+      font-size: 1.1rem;
+      padding: 60px;
+    }
+    /* footer */
+    footer{
+      height: 300px;
+      background:linear-gradient(to right, rgb(38, 67, 78), rgba(63, 72, 93, 0.74));
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 20%;
+      padding-top: 40px;
+    }
+    ul li{
+    display: flex;
+    padding: 3px;
+    font-family: arial;
+    font-size: 0.85rem;
+    text-decoration: none;
+    }
+    .flex ul{
+      padding: 10px;
+    }
+    .flex{
+    font-weight: bold;
+    font-family: arial;
+    font-size: 20px;
+    }
+    
+    /* Responsive Media Queries */
+    @media only screen and (max-width: 1200px) {
+      .info article {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        padding-right: 80px;
+      }
+    }
+    
+    @media only screen and (max-width: 992px) {
+      .item_box {
+        flex-direction: column;
+        height: auto;
+      }
+      .image {
+        height: auto;
+        justify-content: center;
+      }
+      .image img {
+        width: 100%;
+        height: auto;
+      }
+      .info {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+      }
+      .info article {
+        font-size: 2rem;
+        margin: 20px;
+        margin-left: 30px;
+      }
+      p {
+        font-size: 1.1rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 30px;
+      }
+      .margin {
+        padding: 30px;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 30px;
+      }
+      .flex {
+        text-align: center;
+      }
+      .flex ul {
+        align-items: center;
+        justify-content: center;
+      }
+      .navbar {
+        height: 60px;
+      }
+      button {
+        padding: 10px 30px;
+      }
+      button a {
+        font-size: 20px;
+      }
+    }
+    
+    @media only screen and (max-width: 576px) {
+      .info article {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      button {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <button><a href="file:///C:/Users/prash/OneDrive/Desktop/Web-Design_Practice/wing's/index.html">Back</a></button>
+  </div>
+  <div class="item_box">
+    <div class="image"><img src="imgone.png" alt=""></div>
+    <div class="info">
+      <article>Best product in wings. </article>
+      <p>This emoji is nothing special, I just made it to pass time, I thought why to sit idle, let's make something</p>
+
+      <p>This image is completely created from chat, its length and width are both taken on a specific map so that it looks beautiful and attractive.
+
+       <br> Height: 750px
+        and
+      Width: 45% has been mapped</p>
+
+      <p class="margin"><mark>$45.99</mark> <del>$105.99</del></p>
+      <button>Buy Now</button>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="flex"> Get to Know Us
+  <ul>
+    <li>About wings</li>
+    <li>Careers</li>
+    <li>Press Releases</li>
+    <li>Wings science</li>
+  </ul>
+</div>
+
+<div class="flex">Connect with Us
+  <ul>
+    <li>Instagram</li>
+    <li>Facebook</li>
+    <li>Telegram</li>
+  </ul>
+</div>
+
+<div class="flex">Let Us Help You
+  <ul>
+    <li>Your account</li>
+    <li>Sell on wings</li>
+    <li>Help</li>
+  </ul>
+</div>
+
+
+  </footer>
+</body>
+</html>
